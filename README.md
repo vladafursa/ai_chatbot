@@ -5,3 +5,8 @@ Knowledge base with FOL statements was created as a logical-kb.csv. Before the s
 The user can also determine to what extent the cat is wild or domestic by inputting rates (0 to 10) on 4 parameters: size, social behaviour, fit, softness of fur. The output will be % of being wild or domestic. The % of being domestic is calculated, if it is < 50, 100 - % is shown for being wild. This is done using fuzzy logic: skfuzzy library.
 
 The user can distinguish between 3 species of cats: lion, tiger and cheetah with the help of image classification. The user is asked to provide file path to the image. A prediction of what is on the image is outputted. Image classification was done using tensorflow and keras libraries. For the best accuracy pretrained VGG16 was used
+
+
+<img width="521" height="578" alt="Screenshot 2025-10-07 at 02 44 44" src="https://github.com/user-attachments/assets/95238b0c-8434-471e-ba8d-f5c093cf3850" />
+<img width="524" height="408" alt="Screenshot 2025-10-07 at 02 45 08" src="https://github.com/user-attachments/assets/27eb8543-c14d-44e2-b023-2735bb475726" />
+<img width="519" height="255" alt="Screenshot 2025-10-07 at 02 45 24" src="https://github.com/user-attachments/assets/9e96217e-62ef-4c72-8371-5d56b4e136e3" />

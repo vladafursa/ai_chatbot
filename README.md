@@ -10,3 +10,10 @@ The user can distinguish between 3 species of cats: lion, tiger and cheetah with
 <img width="521" height="578" alt="Screenshot 2025-10-07 at 02 44 44" src="https://github.com/user-attachments/assets/95238b0c-8434-471e-ba8d-f5c093cf3850" />
 <img width="524" height="408" alt="Screenshot 2025-10-07 at 02 45 08" src="https://github.com/user-attachments/assets/27eb8543-c14d-44e2-b023-2735bb475726" />
 <img width="519" height="255" alt="Screenshot 2025-10-07 at 02 45 24" src="https://github.com/user-attachments/assets/9e96217e-62ef-4c72-8371-5d56b4e136e3" />
+<img width="516" height="473" alt="Screenshot 2025-10-07 at 02 46 04" src="https://github.com/user-attachments/assets/e750a0a0-2b29-4403-aee8-73d815e4de28" />
+<img width="523" height="574" alt="Screenshot 2025-10-07 at 02 46 33" src="https://github.com/user-attachments/assets/42a6f2ba-9301-4c5b-b12d-60676a1ef249" />
+<img width="516" height="332" alt="Screenshot 2025-10-07 at 02 46 57" src="https://github.com/user-attachments/assets/cd2cee25-e6e8-43f8-94e9-87489ac0f66e" />
+<img width="518" height="422" alt="Screenshot 2025-10-07 at 02 47 14" src="https://github.com/user-attachments/assets/577e1327-9f7e-48f8-9f07-1a8f10bed54d" />
+
+
+

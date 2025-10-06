@@ -1,0 +1,188 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Greetings and Politeness -->
+<category> <pattern> HELLO </pattern>
+  <template>Hello! How are you?</template> </category>
+
+<category> <pattern> HELLO * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HOW ARE YOU </pattern>
+  <template>I'm functioning within normal parameters, thanks for asking.</template></category>
+
+<category><pattern> I AM FINE </pattern>
+  <template>That's good to know. What would you like to discuss about?</template></category>
+
+<category><pattern> BYE </pattern>
+  <template>#0$Bye! Nice talking to you. You take care now.</template></category>
+
+<category><pattern> GOODBYE </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category><pattern> EXIT </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category> <pattern> THANKS </pattern>
+  <template>You are welcome.</template></category>
+
+<category> <pattern> THANK YOU </pattern>
+  <template><srai>THANKS</srai></template></category>
+
+<category> <pattern> CHEERS </pattern>
+  <template>Sure mate.</template></category>
+
+<category> <pattern> CHEERS * </pattern>
+  <template>Sure mate.</template></category>
+
+<!--- Wikipedia API -->
+<category><pattern> WHAT IS A * </pattern>
+  <template>#1$<star index="1"/></template></category>
+
+<category><pattern> WHAT IS AN * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<category><pattern> WHAT IS * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<category><pattern> DEFINE * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<category><pattern> WHO IS * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+
+<!-- General talking -->
+<category>
+    <pattern> DO YOU HAVE A CAT </pattern>
+    <template> Unfortunately no. </template>
+</category>
+
+<category>
+    <pattern> I HAVE * CATS </pattern>
+    <template> That's great! </template>
+</category>
+
+<category>
+    <pattern> I HAVE A CAT </pattern>
+    <template> That's great! </template>
+</category>
+
+<category>
+    <pattern> DO YOU LIKE CATS </pattern>
+    <template> Yes, they are the cutest animals </template>
+</category>
+
+<category>
+    <pattern> I LIKE CATS </pattern>
+    <template> That's great! </template>
+</category>
+
+<category>
+    <pattern> I LOVE CATS </pattern>
+    <template> That's great! </template>
+</category>
+
+<category>
+    <pattern> DO YOU PREFER CATS OR DOGS</pattern>
+    <template> Cats, but both are lovely animals </template>
+</category>
+
+<category>
+    <pattern> I PREFER * </pattern>
+    <template> That's great! </template>
+</category>
+
+<category>
+    <pattern> WHAT DO YOU THINK ABOUT CATS </pattern>
+    <template> They are fluffy and cute </template>
+</category>
+
+<category>
+    <pattern> I THINK CATS ARE * </pattern>
+    <template> Maybe </template>
+</category>
+
+<!-- specific questions-->
+<category>
+    <pattern> WHAT IS A CAT </pattern>
+    <template> A cat is a small domestic mammal. They are mostly human companions. </template>
+</category>
+
+<category>
+    <pattern> HOW MANY TOES DO CATS HAVE </pattern>
+    <template> Cats have 18 toes in total: 5 toes on each front paw and 4 toes on each back paw. </template>
+</category>
+
+<category>
+    <pattern> HOW MANY CAT BREEDS DO EXIST </pattern>
+    <template> Various organizations give different answers on the number of cat breeds: The International Cat Organization recognizes 73 breeds, while Cat Fanciers' Association recognizes only 45. </template>
+</category>
+
+<category>
+    <pattern> HOW MANY BONES DO CATS HAVE </pattern>
+    <template> Cats have 230 bones, while humans have only 206. </template>
+</category>
+
+<category>
+    <pattern> HOW TO KNOW IF A CAT IS HAPPY OR SAD </pattern>
+    <template> If a cat meows loudly when seeing you, it is a sign of its happiness. Purring also means that the cat is happy. But if the cat twitches its tails rapidly or hisses it a sign of anger. If the cat loses appetite it a straight mean of its sadness.  </template>
+</category>
+
+<category>
+    <pattern> WHAT IS THE LARGEST CAT </pattern>
+    <template> Siberian (or Amur) tiger is considered to be the biggest cat species in the world. Adult Siberian male tigers can reach 700 pounds in weight and measure 2,7 to 3,6 metres in length(including tail). </template>
+</category>
+
+<category>
+    <pattern> HOW MANY YEARS DO CATS LIVE </pattern>
+    <template> On average indoor cats live 12 to 18 years. This number depends on breed, lifestyle, quality of life. </template>
+</category>
+
+<category>
+    <pattern> WHY DO CATS MEOW </pattern>
+    <template> Cats meow for different reasons: they can greet you this way, they can ask for something by using their voice or they can notify you about their health issues. </template>
+</category>
+
+<category>
+    <pattern> WHAT IS THE AVERAGE SLEEP TIME OF A DOMESTIC CAT</pattern>
+    <template> Cats sleep 12 to 16 hours a day on average. </template>
+</category>
+
+<category>
+    <pattern> HOW DO YOU KNOW IF A CAT IS SICK </pattern>
+    <template> The next signs of ilness appear: cats eats less or stops eating, there are changes in weight, unusual behaviour appears, cat stops allowing touching itself. </template>
+</category>
+
+<!--- vet API -->
+<category><pattern> WHERE IS THE CLOSEST VET TO * </pattern>
+  <template>#2$<star index="1"/></template></category>
+
+<!--- logic checks -->
+<category>
+    <pattern>I KNOW THAT * IS *</pattern>
+    <template>#31$<star index="1"/>$<star index="2"/></template>
+</category>
+
+<category>
+    <pattern> CHECK THAT * IS *</pattern>
+  <template>#32$<star index="1"/>$<star index="2"/></template>
+</category>
+
+<!--- fuzzy logic -->
+<category><pattern> CHECK IF CAT IS DOMESTIC OR WILD</pattern>
+  <template>#33$</template></category>
+
+<!--- image classification-->
+<category><pattern> WHAT IS ON THIS IMAGE</pattern>
+    <template>#4$</template></category>
+<!-- Default reaction -->
+<category><pattern> * </pattern>
+  <template>#99$<star index="1"/></template></category>
+
+</aiml>
